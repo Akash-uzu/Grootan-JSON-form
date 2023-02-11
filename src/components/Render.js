@@ -116,7 +116,7 @@ const Render = () => {
               return null;
           }
         })}
-        {error && <p style={{color:"red"}}>{error}</p>}
+        {error && <p style={{color:"red"} }>{error}</p>}
       </form>
     </div>
   );
