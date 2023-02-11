@@ -22,7 +22,7 @@ const Render = () => {
     // Example: only allow alphabets
     
     if (inputName === "firstName") {
-      const nameRegex = /[A-Za-z]/;
+      const nameRegex =  /^[A-Za-z]+$/;
 
       if (!nameRegex.test(inputValue)) {
         setError("Name value should contain only letters");
