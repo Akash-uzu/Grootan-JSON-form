@@ -1,5 +1,6 @@
 .container{
-    height: 95vh;
+    height: 90vh;
+    width: 100%;
     margin: 0;
     background-color: gray;
     display: flex;
