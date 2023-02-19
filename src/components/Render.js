@@ -18,8 +18,6 @@ const Render = () => {
   const validateInput = (event) => {
     const inputValue = event.target.value;
     const inputName = event.target.name;
-    // Perform input validation using regex
-    // Example: only allow alphabets
     
     if (inputName === "firstName") {
       const nameRegex =  /^[A-Za-z]+$/;
@@ -55,7 +53,7 @@ const Render = () => {
 
   const onSubmitHandler = (e) => {
       e.preventDefault(); 
-      if(values.firstName && values.email && values.password ){
+      if(values.firstName && values.email && values.password && !error){
         navigate("/submission") 
         console.log(values)
 
